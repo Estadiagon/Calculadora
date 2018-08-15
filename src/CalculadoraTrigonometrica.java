@@ -15,7 +15,7 @@ public class CalculadoraTrigonometrica {
     double angulo;
     
     void convertirangulo(double unangulo){
-        angulo=Math.toRadians(angulo);
+        angulo=Math.toRadians(unangulo);
        
     }
             

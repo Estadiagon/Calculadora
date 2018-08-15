@@ -12,11 +12,11 @@ import java.util.Scanner;
  * @author Estudiantes
  */
 public class principal {
-   public static void main(string[] args){
+   public static void main(String[] args){
        Scanner miEscanner;
        miEscanner=new Scanner(System.in);
-       int numero;
-       numero=miEscanner.nextInt();
+       
+       int numero=miEscanner.nextInt();
        
        
        CalculadoraTrigonometrica miCalculadora=new CalculadoraTrigonometrica();
