@@ -50,7 +50,7 @@ public class UltraCalculdaora extends javax.swing.JPanel {
         jButton20 = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("DialogInput", 0, 24)); // NOI18N
-        jLabel1.setText("UltraCalculdora");
+        jLabel1.setText("MegaCalculadora");
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
