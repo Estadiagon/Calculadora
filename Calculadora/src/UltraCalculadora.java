@@ -8,12 +8,12 @@
  *
  * @author Estudiantes
  */
-public class UltraCalculdaora extends javax.swing.JPanel {
+public class UltraCalculadora extends javax.swing.JPanel {
 
     /**
      * Creates new form UltraCalculdaora
      */
-    public UltraCalculdaora() {
+    public UltraCalculadora() {
         initComponents();
     }
 
