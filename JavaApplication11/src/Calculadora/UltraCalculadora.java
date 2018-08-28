@@ -18,7 +18,7 @@ public class UltraCalculadora extends javax.swing.JPanel {
     }
     
     
-    
+    int operando1=1; 
     
     
 
@@ -86,64 +86,122 @@ public class UltraCalculadora extends javax.swing.JPanel {
         Titulo.setFont(new java.awt.Font("DialogInput", 0, 24)); // NOI18N
         Titulo.setText("MegaCalculadora");
 
+        B1.setBackground(new java.awt.Color(102, 0, 0));
+        B1.setForeground(new java.awt.Color(255, 255, 255));
         B1.setText("1");
         B1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 B1MouseClicked(evt);
             }
         });
+        B1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B1ActionPerformed(evt);
+            }
+        });
 
+        B2.setBackground(new java.awt.Color(102, 0, 0));
+        B2.setForeground(new java.awt.Color(255, 255, 255));
         B2.setText("2");
 
+        B3.setBackground(new java.awt.Color(102, 0, 0));
+        B3.setForeground(new java.awt.Color(255, 255, 255));
         B3.setText("3");
 
+        B4.setBackground(new java.awt.Color(102, 0, 0));
+        B4.setForeground(new java.awt.Color(255, 255, 255));
         B4.setText("4");
 
+        B5.setBackground(new java.awt.Color(102, 0, 0));
+        B5.setForeground(new java.awt.Color(255, 255, 255));
         B5.setText("5");
 
+        B7.setBackground(new java.awt.Color(102, 0, 0));
+        B7.setForeground(new java.awt.Color(255, 255, 255));
         B7.setText("7");
 
+        OperandoDivision.setBackground(new java.awt.Color(102, 0, 0));
+        OperandoDivision.setForeground(new java.awt.Color(255, 255, 255));
         OperandoDivision.setText("/");
 
+        OperadorSuma.setBackground(new java.awt.Color(102, 0, 0));
+        OperadorSuma.setForeground(new java.awt.Color(255, 255, 255));
         OperadorSuma.setText("+");
 
+        OperandoProducto.setBackground(new java.awt.Color(102, 0, 0));
+        OperandoProducto.setForeground(new java.awt.Color(255, 255, 255));
         OperandoProducto.setText("*");
 
+        OperadorResta.setBackground(new java.awt.Color(102, 0, 0));
+        OperadorResta.setForeground(new java.awt.Color(255, 255, 255));
         OperadorResta.setText("-");
 
+        B6.setBackground(new java.awt.Color(102, 0, 0));
+        B6.setForeground(new java.awt.Color(255, 255, 255));
         B6.setText("6");
 
+        B8.setBackground(new java.awt.Color(102, 0, 0));
+        B8.setForeground(new java.awt.Color(255, 255, 255));
         B8.setText("8");
 
+        B9.setBackground(new java.awt.Color(102, 0, 0));
+        B9.setForeground(new java.awt.Color(255, 255, 255));
         B9.setText("9");
 
+        B0.setBackground(new java.awt.Color(102, 0, 0));
+        B0.setForeground(new java.awt.Color(255, 255, 255));
         B0.setText("0");
 
+        OperandoIgual.setBackground(new java.awt.Color(102, 0, 0));
+        OperandoIgual.setForeground(new java.awt.Color(255, 255, 255));
         OperandoIgual.setText("=");
 
+        jButton36.setBackground(new java.awt.Color(102, 0, 0));
+        jButton36.setForeground(new java.awt.Color(255, 255, 255));
         jButton36.setText("AC");
 
+        BSEN.setBackground(new java.awt.Color(102, 0, 0));
+        BSEN.setForeground(new java.awt.Color(255, 255, 255));
         BSEN.setText("sen");
 
+        BCOS.setBackground(new java.awt.Color(102, 0, 0));
+        BCOS.setForeground(new java.awt.Color(255, 255, 255));
         BCOS.setText("cos");
 
+        BTAN.setBackground(new java.awt.Color(102, 0, 0));
+        BTAN.setForeground(new java.awt.Color(255, 255, 255));
         BTAN.setText("tan");
 
+        jLabel2.setBackground(new java.awt.Color(102, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Calculadora de Conversiòn ");
+        jLabel2.setText("Calculadora de ConversiÃ²n ");
 
+        BKG.setBackground(new java.awt.Color(102, 0, 0));
+        BKG.setForeground(new java.awt.Color(255, 255, 255));
         BKG.setText("kg");
 
+        BG.setBackground(new java.awt.Color(102, 0, 0));
+        BG.setForeground(new java.awt.Color(255, 255, 255));
         BG.setText("g");
 
-        BGradosC.setText("ºC");
+        BGradosC.setBackground(new java.awt.Color(102, 0, 0));
+        BGradosC.setForeground(new java.awt.Color(255, 255, 255));
+        BGradosC.setText("ÂºC");
 
-        BGradosF.setText("ºF");
+        BGradosF.setBackground(new java.awt.Color(102, 0, 0));
+        BGradosF.setForeground(new java.awt.Color(255, 255, 255));
+        BGradosF.setText("ÂºF");
 
+        BCM.setBackground(new java.awt.Color(102, 0, 0));
+        BCM.setForeground(new java.awt.Color(255, 255, 255));
         BCM.setText("cm");
 
+        BM.setBackground(new java.awt.Color(102, 0, 0));
+        BM.setForeground(new java.awt.Color(255, 255, 255));
         BM.setText("m");
 
+        BConversion.setBackground(new java.awt.Color(102, 0, 0));
+        BConversion.setForeground(new java.awt.Color(255, 255, 255));
         BConversion.setText("Convertir");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -153,18 +211,6 @@ public class UltraCalculadora extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(B0, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(OperandoIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(OperandoProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(39, 39, 39))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -197,13 +243,6 @@ public class UltraCalculadora extends javax.swing.JPanel {
                                             .addComponent(OperadorSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addComponent(Cuadrodetexto, javax.swing.GroupLayout.Alignment.LEADING))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(16, 16, 16)
-                                .addComponent(BSEN, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BCOS, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BTAN, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(BKG, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -219,8 +258,29 @@ public class UltraCalculadora extends javax.swing.JPanel {
                                         .addComponent(BGradosC, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(BGradosF, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(BConversion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addComponent(BConversion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(10, 10, 10)
+                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(BSEN, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(BCOS, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(BTAN, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(B0, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(OperandoIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(OperandoProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -280,8 +340,14 @@ public class UltraCalculadora extends javax.swing.JPanel {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void B1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B1MouseClicked
-
+       
+ 
+ 
     }//GEN-LAST:event_B1MouseClicked
+
+    private void B1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_B1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
