@@ -53,7 +53,7 @@ public class UltraCalculadora extends javax.swing.JPanel {
         B9 = new javax.swing.JButton();
         B0 = new javax.swing.JButton();
         OperandoIgual = new javax.swing.JButton();
-        jButton36 = new javax.swing.JButton();
+        Borrar = new javax.swing.JButton();
         BSEN = new javax.swing.JButton();
         BCOS = new javax.swing.JButton();
         BTAN = new javax.swing.JButton();
@@ -103,62 +103,137 @@ public class UltraCalculadora extends javax.swing.JPanel {
         B2.setBackground(new java.awt.Color(102, 0, 0));
         B2.setForeground(new java.awt.Color(255, 255, 255));
         B2.setText("2");
+        B2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B2MouseClicked(evt);
+            }
+        });
 
         B3.setBackground(new java.awt.Color(102, 0, 0));
         B3.setForeground(new java.awt.Color(255, 255, 255));
         B3.setText("3");
+        B3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B3MouseClicked(evt);
+            }
+        });
 
         B4.setBackground(new java.awt.Color(102, 0, 0));
         B4.setForeground(new java.awt.Color(255, 255, 255));
         B4.setText("4");
+        B4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B4MouseClicked(evt);
+            }
+        });
 
         B5.setBackground(new java.awt.Color(102, 0, 0));
         B5.setForeground(new java.awt.Color(255, 255, 255));
         B5.setText("5");
+        B5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B5MouseClicked(evt);
+            }
+        });
 
         B7.setBackground(new java.awt.Color(102, 0, 0));
         B7.setForeground(new java.awt.Color(255, 255, 255));
         B7.setText("7");
+        B7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B7MouseClicked(evt);
+            }
+        });
 
         OperandoDivision.setBackground(new java.awt.Color(102, 0, 0));
         OperandoDivision.setForeground(new java.awt.Color(255, 255, 255));
         OperandoDivision.setText("/");
+        OperandoDivision.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                OperandoDivisionMouseClicked(evt);
+            }
+        });
 
         OperadorSuma.setBackground(new java.awt.Color(102, 0, 0));
         OperadorSuma.setForeground(new java.awt.Color(255, 255, 255));
         OperadorSuma.setText("+");
+        OperadorSuma.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                OperadorSumaMouseClicked(evt);
+            }
+        });
+        OperadorSuma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OperadorSumaActionPerformed(evt);
+            }
+        });
 
         OperandoProducto.setBackground(new java.awt.Color(102, 0, 0));
         OperandoProducto.setForeground(new java.awt.Color(255, 255, 255));
         OperandoProducto.setText("*");
+        OperandoProducto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                OperandoProductoMouseClicked(evt);
+            }
+        });
 
         OperadorResta.setBackground(new java.awt.Color(102, 0, 0));
         OperadorResta.setForeground(new java.awt.Color(255, 255, 255));
         OperadorResta.setText("-");
+        OperadorResta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                OperadorRestaMouseClicked(evt);
+            }
+        });
 
         B6.setBackground(new java.awt.Color(102, 0, 0));
         B6.setForeground(new java.awt.Color(255, 255, 255));
         B6.setText("6");
+        B6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B6MouseClicked(evt);
+            }
+        });
 
         B8.setBackground(new java.awt.Color(102, 0, 0));
         B8.setForeground(new java.awt.Color(255, 255, 255));
         B8.setText("8");
+        B8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B8MouseClicked(evt);
+            }
+        });
 
         B9.setBackground(new java.awt.Color(102, 0, 0));
         B9.setForeground(new java.awt.Color(255, 255, 255));
         B9.setText("9");
+        B9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B9MouseClicked(evt);
+            }
+        });
 
         B0.setBackground(new java.awt.Color(102, 0, 0));
         B0.setForeground(new java.awt.Color(255, 255, 255));
         B0.setText("0");
+        B0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                B0MouseClicked(evt);
+            }
+        });
 
         OperandoIgual.setBackground(new java.awt.Color(102, 0, 0));
         OperandoIgual.setForeground(new java.awt.Color(255, 255, 255));
         OperandoIgual.setText("=");
 
-        jButton36.setBackground(new java.awt.Color(102, 0, 0));
-        jButton36.setForeground(new java.awt.Color(255, 255, 255));
-        jButton36.setText("AC");
+        Borrar.setBackground(new java.awt.Color(102, 0, 0));
+        Borrar.setForeground(new java.awt.Color(255, 255, 255));
+        Borrar.setText("AC");
+        Borrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BorrarMouseClicked(evt);
+            }
+        });
 
         BSEN.setBackground(new java.awt.Color(102, 0, 0));
         BSEN.setForeground(new java.awt.Color(255, 255, 255));
@@ -273,7 +348,7 @@ public class UltraCalculadora extends javax.swing.JPanel {
                                         .addComponent(BTAN, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Borrar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(B0, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -312,7 +387,7 @@ public class UltraCalculadora extends javax.swing.JPanel {
                     .addComponent(OperandoProducto)
                     .addComponent(OperandoIgual)
                     .addComponent(B0)
-                    .addComponent(jButton36))
+                    .addComponent(Borrar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BSEN)
@@ -340,7 +415,7 @@ public class UltraCalculadora extends javax.swing.JPanel {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void B1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B1MouseClicked
-       
+Cuadrodetexto.setText(Cuadrodetexto.getText()+"1");       
  
  
     }//GEN-LAST:event_B1MouseClicked
@@ -348,6 +423,70 @@ public class UltraCalculadora extends javax.swing.JPanel {
     private void B1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_B1ActionPerformed
+
+    private void B2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B2MouseClicked
+Cuadrodetexto.setText(Cuadrodetexto.getText()+"2");        
+    }//GEN-LAST:event_B2MouseClicked
+
+    private void B3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B3MouseClicked
+     Cuadrodetexto.setText(Cuadrodetexto.getText()+"3"); 
+    }//GEN-LAST:event_B3MouseClicked
+
+    private void B4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B4MouseClicked
+     Cuadrodetexto.setText(Cuadrodetexto.getText()+"4"); 
+    }//GEN-LAST:event_B4MouseClicked
+
+    private void B5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B5MouseClicked
+       Cuadrodetexto.setText(Cuadrodetexto.getText()+"5"); 
+    }//GEN-LAST:event_B5MouseClicked
+
+    private void B6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B6MouseClicked
+     Cuadrodetexto.setText(Cuadrodetexto.getText()+"6"); 
+    }//GEN-LAST:event_B6MouseClicked
+
+    private void B7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B7MouseClicked
+       Cuadrodetexto.setText(Cuadrodetexto.getText()+"7");
+    }//GEN-LAST:event_B7MouseClicked
+
+    private void B8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B8MouseClicked
+        Cuadrodetexto.setText(Cuadrodetexto.getText()+"8");
+    }//GEN-LAST:event_B8MouseClicked
+
+    private void B9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B9MouseClicked
+       Cuadrodetexto.setText(Cuadrodetexto.getText()+"9");
+    }//GEN-LAST:event_B9MouseClicked
+
+    private void B0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B0MouseClicked
+       Cuadrodetexto.setText(Cuadrodetexto.getText()+"0");
+    }//GEN-LAST:event_B0MouseClicked
+
+    private void BorrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BorrarMouseClicked
+        Cuadrodetexto.setText("");
+    }//GEN-LAST:event_BorrarMouseClicked
+
+    private void OperadorSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OperadorSumaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_OperadorSumaActionPerformed
+
+    private void OperadorSumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperadorSumaMouseClicked
+double valor = Double.parseDouble(Cuadrodetexto.getText());
+     Cuadrodetexto.setText(" ");       
+    }//GEN-LAST:event_OperadorSumaMouseClicked
+
+    private void OperadorRestaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperadorRestaMouseClicked
+       double valor = Double.parseDouble(Cuadrodetexto.getText());
+     Cuadrodetexto.setText(" "); 
+    }//GEN-LAST:event_OperadorRestaMouseClicked
+
+    private void OperandoDivisionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperandoDivisionMouseClicked
+     double valor = Double.parseDouble(Cuadrodetexto.getText());
+     Cuadrodetexto.setText(" "); 
+    }//GEN-LAST:event_OperandoDivisionMouseClicked
+
+    private void OperandoProductoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperandoProductoMouseClicked
+       double valor = Double.parseDouble(Cuadrodetexto.getText());
+     Cuadrodetexto.setText(" "); 
+    }//GEN-LAST:event_OperandoProductoMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -371,6 +510,7 @@ public class UltraCalculadora extends javax.swing.JPanel {
     private javax.swing.JButton BM;
     private javax.swing.JButton BSEN;
     private javax.swing.JButton BTAN;
+    private javax.swing.JButton Borrar;
     private javax.swing.JTextField Cuadrodetexto;
     private javax.swing.JButton OperadorResta;
     private javax.swing.JButton OperadorSuma;
@@ -378,7 +518,6 @@ public class UltraCalculadora extends javax.swing.JPanel {
     private javax.swing.JButton OperandoIgual;
     private javax.swing.JButton OperandoProducto;
     private javax.swing.JLabel Titulo;
-    private javax.swing.JButton jButton36;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
