@@ -471,19 +471,18 @@ Cuadrodetexto.setText(Cuadrodetexto.getText()+"2");
     }//GEN-LAST:event_OperadorSumaActionPerformed
 
     private void OperadorSumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperadorSumaMouseClicked
-    double valor = Double.parseDouble(Cuadrodetexto.getText());
-    Cuadrodetexto.setText(" "); 
-    
+    ingresar(1);
     
     }//GEN-LAST:event_OperadorSumaMouseClicked
 
     void ingresar(int a){
-        
+        double valor = Double.parseDouble(Cuadrodetexto.getText());
+        aritmetica.operando1 = (int)valor;
         Cuadrodetexto.setText(""); 
         opcion=a;
     }
     
-    
+     
     
     private void OperadorRestaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperadorRestaMouseClicked
        
@@ -493,32 +492,37 @@ Cuadrodetexto.setText(Cuadrodetexto.getText()+"2");
 
     private void OperandoDivisionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperandoDivisionMouseClicked
      
-        ingresar(3);
+        ingresar(4);
     }//GEN-LAST:event_OperandoDivisionMouseClicked
 
     private void OperandoProductoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperandoProductoMouseClicked
-       double valor = Double.parseDouble(Cuadrodetexto.getText());
-     Cuadrodetexto.setText(" "); 
+       ingresar(3);
     }//GEN-LAST:event_OperandoProductoMouseClicked
 
     private void OperandoIgualMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperandoIgualMouseClicked
 
         switch(opcion){
             case 1:
-                aritmetica.suma();
-                
-                break;
+               double valor = Double.parseDouble(Cuadrodetexto.getText());
+        aritmetica.operando2 = (int)valor;
+        Cuadrodetexto.setText(String.valueOf(aritmetica.suma()));
+                 break;
                 
             case 2:
-                aritmetica.resta();
-                break;
+                double valor1 = Double.parseDouble(Cuadrodetexto.getText());
+        aritmetica.operando2 = (int)valor1;
+        Cuadrodetexto.setText(String.valueOf(aritmetica.resta()));
+        break;
             case 3:
-                aritmetica.multiplicacion();
-                break;
+               double valor2 = Double.parseDouble(Cuadrodetexto.getText());
+        aritmetica.operando2 = (int)valor2;
+        Cuadrodetexto.setText(String.valueOf(aritmetica.multiplicacion()));
+        break;
             case 4:
-                aritmetica.division();
-                break;
-            
+                double valor3 = Double.parseDouble(Cuadrodetexto.getText());
+        aritmetica.operando2 = (int)valor3;
+        Cuadrodetexto.setText(String.valueOf(aritmetica.division()));
+        break;
                 
                 
                 
