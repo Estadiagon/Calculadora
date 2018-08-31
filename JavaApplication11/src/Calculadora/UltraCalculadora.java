@@ -471,18 +471,18 @@ Cuadrodetexto.setText(Cuadrodetexto.getText()+"2");
     }//GEN-LAST:event_OperadorSumaActionPerformed
 
     private void OperadorSumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperadorSumaMouseClicked
-    //double valor = Double.parseDouble(Cuadrodetexto.getText());
-    
-    aritmetica.setOperando1(Integer.parseInt(Cuadrodetexto.getText()));
+    double valor = Double.parseDouble(Cuadrodetexto.getText());
     Cuadrodetexto.setText(" "); 
-     
+    
+    
     }//GEN-LAST:event_OperadorSumaMouseClicked
 
     void ingresar(int a){
-        aritmetica.setOperando1(Integer.parseInt(Cuadrodetexto.getText()));
+        
         Cuadrodetexto.setText(""); 
         opcion=a;
     }
+    
     
     
     private void OperadorRestaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OperadorRestaMouseClicked
@@ -506,9 +506,19 @@ Cuadrodetexto.setText(Cuadrodetexto.getText()+"2");
         switch(opcion){
             case 1:
                 aritmetica.suma();
+                
                 break;
                 
             case 2:
+                aritmetica.resta();
+                break;
+            case 3:
+                aritmetica.multiplicacion();
+                break;
+            case 4:
+                aritmetica.division();
+                break;
+            
                 
                 
                 
