@@ -549,19 +549,19 @@ Cuadrodetexto.setText(Cuadrodetexto.getText()+"2");
 
     private void BSENMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BSENMouseClicked
        double valor = Double.parseDouble(Cuadrodetexto.getText());
-        trigonometrica.angulo = valor;
+        trigonometrica.angulo = Math.toRadians(valor);
         Cuadrodetexto.setText(String.valueOf(trigonometrica.seno()));  
     }//GEN-LAST:event_BSENMouseClicked
 
     private void BCOSMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BCOSMouseClicked
         double valor = Double.parseDouble(Cuadrodetexto.getText());
-        trigonometrica.angulo = valor;
+        trigonometrica.angulo = Math.toRadians(valor);
         Cuadrodetexto.setText(String.valueOf(trigonometrica.coseno()));
     }//GEN-LAST:event_BCOSMouseClicked
 
     private void BTANMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BTANMouseClicked
         double valor = Double.parseDouble(Cuadrodetexto.getText());
-        trigonometrica.angulo = valor;
+        trigonometrica.angulo = Math.toRadians(valor);
         Cuadrodetexto.setText(String.valueOf(trigonometrica.tangente()));
     }//GEN-LAST:event_BTANMouseClicked
 
