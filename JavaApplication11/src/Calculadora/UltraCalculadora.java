@@ -16,6 +16,7 @@ public class UltraCalculadora extends javax.swing.JPanel {
      * Creates new form UltraCalculdaora
      */
    CalculadoraAritmetica aritmetica=new CalculadoraAritmetica();
+   CalculadoraTrigonometrica trigonometrica=new CalculadoraTrigonometrica();
     int opcion;
     
     
@@ -240,14 +241,29 @@ public class UltraCalculadora extends javax.swing.JPanel {
         BSEN.setBackground(new java.awt.Color(102, 0, 0));
         BSEN.setForeground(new java.awt.Color(255, 255, 255));
         BSEN.setText("sen");
+        BSEN.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BSENMouseClicked(evt);
+            }
+        });
 
         BCOS.setBackground(new java.awt.Color(102, 0, 0));
         BCOS.setForeground(new java.awt.Color(255, 255, 255));
         BCOS.setText("cos");
+        BCOS.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BCOSMouseClicked(evt);
+            }
+        });
 
         BTAN.setBackground(new java.awt.Color(102, 0, 0));
         BTAN.setForeground(new java.awt.Color(255, 255, 255));
         BTAN.setText("tan");
+        BTAN.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BTANMouseClicked(evt);
+            }
+        });
 
         jLabel2.setBackground(new java.awt.Color(102, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -529,8 +545,25 @@ Cuadrodetexto.setText(Cuadrodetexto.getText()+"2");
             
         }
 
-        // TODO add your handling code here:
     }//GEN-LAST:event_OperandoIgualMouseClicked
+
+    private void BSENMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BSENMouseClicked
+       double valor = Double.parseDouble(Cuadrodetexto.getText());
+        trigonometrica.angulo = valor;
+        Cuadrodetexto.setText(String.valueOf(trigonometrica.seno()));  
+    }//GEN-LAST:event_BSENMouseClicked
+
+    private void BCOSMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BCOSMouseClicked
+        double valor = Double.parseDouble(Cuadrodetexto.getText());
+        trigonometrica.angulo = valor;
+        Cuadrodetexto.setText(String.valueOf(trigonometrica.coseno()));
+    }//GEN-LAST:event_BCOSMouseClicked
+
+    private void BTANMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BTANMouseClicked
+        double valor = Double.parseDouble(Cuadrodetexto.getText());
+        trigonometrica.angulo = valor;
+        Cuadrodetexto.setText(String.valueOf(trigonometrica.tangente()));
+    }//GEN-LAST:event_BTANMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
