@@ -493,7 +493,7 @@ Cuadrodetexto.setText(Cuadrodetexto.getText()+"2");
 
     void ingresar(int a){
         double valor = Double.parseDouble(Cuadrodetexto.getText());
-        aritmetica.operando1 = (int)valor;
+        aritmetica.operando1 = (double)valor;
         Cuadrodetexto.setText(""); 
         opcion=a;
     }

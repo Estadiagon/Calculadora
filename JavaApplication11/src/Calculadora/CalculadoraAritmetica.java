@@ -16,31 +16,31 @@ public class CalculadoraAritmetica {
     
  
 
-   int operando1 = 0;
-   int operando2=0;
+   double operando1 = 0;
+   double operando2=0;
    
-   int suma() {
-       int r;
+   double suma() {
+       double r;
        r=operando1 + operando2;
        return r;
    }
    
    
-   int resta() {
-       int r;
+   double resta() {
+       double r;
        r=operando1 - operando2;
        return r;
    }
    
   
-   int division() {
-       int r;
+   double division() {
+       double r;
        r=operando1 / operando2;
        return r;
    }
    
-   int multiplicacion() {
-       int r;
+   double multiplicacion() {
+       double r;
        r=operando1 * operando2;
        return r;
    }
