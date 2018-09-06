@@ -11,7 +11,7 @@ import java.awt.BorderLayout;
 
 /**
  *
- * @author Estudiantes
+ * @author JUAN RAMIREZ Y MARIA SOSA
  */
 public class principal {
    public static void main(String[] args){
