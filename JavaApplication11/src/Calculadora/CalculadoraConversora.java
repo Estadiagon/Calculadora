@@ -1,3 +1,5 @@
+package Calculadora;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,34 +18,43 @@ public class CalculadoraConversora {
     double M=0;
     double Gcentigrados=0;
     double Gfarenheit=0;
-     
-    void ConvertirGramos(double Peso){
-        Gramos= Peso/(1000);
+    double Peso;
+    double Longitud;
+    double Temperatura;
+    
+    double ConvertirGramos(){
+        Gramos = Peso*(1000);
+        return Gramos;
        
     }
-    void ConvertirKilogramos(double Peso) {
-       Kilogramos= Peso*(1000);
+    double ConvertirKilogramos(double Peso) {
+       Kilogramos = Peso/(1000);
+        return Kilogramos;
        
    }
     
-    void ConvertirCm(double Longitud){
-        Cm= Longitud*(100);
+    double ConvertirCm(double Longitud){
+        Cm = Longitud*(100);
+        return Cm;
        
     }
     
     
-   void ConvertirM(double Longitud){
-        M= Longitud/(100);
+   double ConvertirM(double Longitud){
+        M = Longitud/(100);
+        return M;
        
     }
    
-   void ConvertirGcentigrados(double Temperatura){
-        Gfarenheit= Temperatura*(1.8000)+(32.00);
+   double ConvertirGcentigrados(double Temperatura){
+        Gfarenheit = (Temperatura-(32.00))/(1.8000);
+        return Gfarenheit;
        
     }
    
-    void ConvertirGfarenheit(double Temperatura){
-        Gcentigrados= (Temperatura-(32.00))/(1.8000);
+    double ConvertirGfarenheit(double Temperatura){
+        Gcentigrados = Temperatura*(1.8000)+(32.00);
+        return Gcentigrados;
        
     }
      

@@ -512,6 +512,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="kg"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BKGMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BG">
       <Properties>
@@ -523,6 +526,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="g"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BGMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BGradosC">
       <Properties>
@@ -534,6 +540,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="&#xba;C"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BGradosCMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BGradosF">
       <Properties>
@@ -545,6 +554,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="&#xba;F"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BGradosFMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BCM">
       <Properties>
@@ -556,6 +568,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="cm"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BCMMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BM">
       <Properties>
@@ -567,6 +582,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="m"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BMMouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BConversion">
       <Properties>

@@ -17,6 +17,7 @@ public class UltraCalculadora extends javax.swing.JPanel {
      */
    CalculadoraAritmetica aritmetica=new CalculadoraAritmetica();
    CalculadoraTrigonometrica trigonometrica=new CalculadoraTrigonometrica();
+   CalculadoraConversora conversion=new CalculadoraConversora();
     int opcion;
     
     
@@ -272,26 +273,56 @@ public class UltraCalculadora extends javax.swing.JPanel {
         BKG.setBackground(new java.awt.Color(102, 0, 0));
         BKG.setForeground(new java.awt.Color(255, 255, 255));
         BKG.setText("kg");
+        BKG.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BKGMouseClicked(evt);
+            }
+        });
 
         BG.setBackground(new java.awt.Color(102, 0, 0));
         BG.setForeground(new java.awt.Color(255, 255, 255));
         BG.setText("g");
+        BG.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BGMouseClicked(evt);
+            }
+        });
 
         BGradosC.setBackground(new java.awt.Color(102, 0, 0));
         BGradosC.setForeground(new java.awt.Color(255, 255, 255));
         BGradosC.setText("ºC");
+        BGradosC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BGradosCMouseClicked(evt);
+            }
+        });
 
         BGradosF.setBackground(new java.awt.Color(102, 0, 0));
         BGradosF.setForeground(new java.awt.Color(255, 255, 255));
         BGradosF.setText("ºF");
+        BGradosF.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BGradosFMouseClicked(evt);
+            }
+        });
 
         BCM.setBackground(new java.awt.Color(102, 0, 0));
         BCM.setForeground(new java.awt.Color(255, 255, 255));
         BCM.setText("cm");
+        BCM.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BCMMouseClicked(evt);
+            }
+        });
 
         BM.setBackground(new java.awt.Color(102, 0, 0));
         BM.setForeground(new java.awt.Color(255, 255, 255));
         BM.setText("m");
+        BM.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BMMouseClicked(evt);
+            }
+        });
 
         BConversion.setBackground(new java.awt.Color(102, 0, 0));
         BConversion.setForeground(new java.awt.Color(255, 255, 255));
@@ -564,6 +595,48 @@ Cuadrodetexto.setText(Cuadrodetexto.getText()+"2");
         trigonometrica.angulo = Math.toRadians(valor);
         Cuadrodetexto.setText(String.valueOf(trigonometrica.tangente()));
     }//GEN-LAST:event_BTANMouseClicked
+
+    private void BKGMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BKGMouseClicked
+        // TODO add your handling code here:
+        double valor = Double.parseDouble(Cuadrodetexto.getText());
+        conversion.Peso = valor;
+        Cuadrodetexto.setText(String.valueOf(conversion.ConvertirKilogramos(valor)));
+    }//GEN-LAST:event_BKGMouseClicked
+
+    private void BGMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BGMouseClicked
+        // TODO add your handling code here:
+        double valor = Double.parseDouble(Cuadrodetexto.getText());
+        conversion.Peso = valor;
+        Cuadrodetexto.setText(String.valueOf(conversion.ConvertirGramos()));
+       
+    }//GEN-LAST:event_BGMouseClicked
+
+    private void BGradosCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BGradosCMouseClicked
+        // TODO add your handling code here:
+        double valor = Double.parseDouble(Cuadrodetexto.getText());
+        conversion.Temperatura = valor;
+        Cuadrodetexto.setText(String.valueOf(conversion.ConvertirGcentigrados(valor)));
+    }//GEN-LAST:event_BGradosCMouseClicked
+
+    private void BGradosFMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BGradosFMouseClicked
+        // TODO add your handling code here:
+        double valor = Double.parseDouble(Cuadrodetexto.getText());
+        conversion.Temperatura = valor;
+        Cuadrodetexto.setText(String.valueOf(conversion.ConvertirGfarenheit(valor)));
+    }//GEN-LAST:event_BGradosFMouseClicked
+
+    private void BMMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BMMouseClicked
+        // TODO add your handling code here:
+        double valor = Double.parseDouble(Cuadrodetexto.getText());
+        conversion.Longitud = valor ;
+        Cuadrodetexto.setText(String.valueOf(conversion.ConvertirM(valor)));
+    }//GEN-LAST:event_BMMouseClicked
+
+    private void BCMMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BCMMouseClicked
+        double valor = Double.parseDouble(Cuadrodetexto.getText());
+        conversion.Longitud = valor;
+        Cuadrodetexto.setText(String.valueOf(conversion.ConvertirCm(valor)));
+    }//GEN-LAST:event_BCMMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
